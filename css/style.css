@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url(reset.css);
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 160%;
+    color:  #424551;
+}
+.main-content__container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.about-us__title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color:  #1E212C;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.about-us {
+    padding-bottom: 60px;
+}
+.about-us p {
+    margin-bottom: 48px;
+}
+.about-us__list>h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 24px;
+}
+.about-us__list li::before {
+    content: url(../img/check.svg);
+    margin-right: 16px;
+}
+.course-curator {
+    padding-bottom: 60px;
+}
+.course-curator>p:nth-child(1){
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+    margin-bottom: 8px;
+}
+.course-curator__title {
+    margin-bottom: 16px;
+}
+.course-curator__position {
+    font-size: 20px;
+    line-height: 150%;
+    color: #787A80;
+    margin-bottom: 32px;
+}
+.course-curator>ul {
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+.course-curator>ul li:nth-child(1):before {
+    content: url(../img/star.svg);
+    margin-right: 8px;
+}
+.course-curator>ul li:nth-child(2):before {
+    content: url(../img/play.svg);
+    margin-right: 8px;
+}
+.course-curator>ul li:nth-child(3):before {
+    content: url(../img/profile.svg);
+    margin-right: 8px;
+}
+
+/*-----------css-pseudoselectors----------*/
+
+.about-css-pseudoclasses {
+    outline: 1px solid green;
+    height: 300px;
+    padding: 20px;
+    overflow: scroll;
+}
+.about-css-pseudoclasses p {
+    margin-bottom: 20px;
+    color:cadetblue;
+    font-size: 24px;
+}
+.about-css-pseudoclasses__list {
+    font-size: 18px;
+    font-weight: 600;
+}
+.about-css-pseudoclasses__list>li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.about-css-pseudoclasses__list>li a:active {
+    color: darkgreen;
+}
+.about-css-pseudoclasses__list>li a:visited {
+    color:darkviolet;
+    text-decoration: underline;
+}
+.about-css-pseudoclasses__list>li a:focus {
+    outline: 1px solid rosybrown;
+}
+.about-css-pseudoclasses__list ul {
+    display: none;
+}
+ul li:hover ul {
+    display: block;
+    color:coral;
+}
+
+
+/*---------------------GAME---------------------*/
+.game {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: #1E212C;
+    height: 500px;
+}
+.game__block {
+    padding: 40px 100px;
+}
+.game__title {
+    font-style: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fbaf7f;
+    padding-bottom: 15px;
+}
+.game__item-first {
+    font-size: 18px;
+    font-weight: 600;
+    color:#1E212C;
+    text-align: center;
+    padding-top: 10px;
+    background-color: aquamarine;
+    height: 50px;
+    width: 100px;
+}
+.game__item-first:hover+.game__item-second {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-second {
+    opacity: 0;
+    visibility: hidden;
+    height: 50px;
+    width: 25px;
+    background-color: aquamarine;
+    margin-left: 75px;
+}
+.game__item-second:hover {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-third {
+    opacity: 0;
+    visibility: hidden;
+    height: 25px;
+    width: 225px;
+    background-color: aquamarine;
+    margin-left: 75px;
+}
+.game__item-second:hover+.game__item-third  {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-third:hover {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-fourth  {
+    opacity: 0;
+    visibility: hidden;
+    height: 125px;
+    width: 25px;
+    background-color: aquamarine;
+    margin-left: 275px;
+}
+.game__item-third:hover+.game__item-fourth  {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-fourth:hover {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-fifth {
+    opacity: 0;
+    visibility: hidden;
+    height: 25px;
+    width: 250px;
+    background-color: aquamarine;
+    margin-left: 275px;
+}
+.game__item-fourth:hover+.game__item-fifth {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-fifth:hover {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-sixth {
+    opacity: 0;
+    visibility: hidden;
+    height: 125px;
+    width: 25px;
+    margin: -125px 0 0 500px;
+    background-color: aquamarine;
+}
+.game__item-fifth:hover+.game__item-sixth {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-sixth:hover {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-seventh {
+    opacity: 0;
+    visibility: hidden;
+    height: 25px;
+    width: 255px;
+    margin: -125px 0 0 500px;
+    background-color: aquamarine;
+}
+.game__item-sixth:hover+.game__item-seventh {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-seventh:hover {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-eighth {
+    opacity: 0;
+    visibility: hidden;
+    height: 125px;
+    width: 25px;
+    margin: -125px 0 0 735px;
+    background-color: aquamarine;
+}
+.game__item-seventh:hover+.game__item-eighth {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-eighth:hover {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-ninth {
+    opacity: 0;
+    visibility: hidden;
+    height: 25px;
+    width: 225px;
+    margin: -125px 0 0 735px;
+    background-color: aquamarine;
+}
+.game__item-eighth:hover+.game__item-ninth {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-ninth:hover {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-finish {
+    opacity: 0;
+    visibility: hidden;
+    height: 100px;
+    width: 100px;
+    margin: -65px 0 0 950px;
+    background-color:#ff8052;
+    color: #1E212C;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 25px;
+    outline: 4px solid #fbaf7f;
+}
+.game__item-ninth:hover+.game__item-finish  {
+    visibility: visible;
+    opacity: 1;
+}
+.game__item-finish:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
